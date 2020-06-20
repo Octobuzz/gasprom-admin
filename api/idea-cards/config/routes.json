@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/idea-cards",
+      "handler": "idea-cards.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-cards/count",
+      "handler": "idea-cards.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-cards/:id",
+      "handler": "idea-cards.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/idea-cards",
+      "handler": "idea-cards.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/idea-cards/:id",
+      "handler": "idea-cards.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/idea-cards/:id",
+      "handler": "idea-cards.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

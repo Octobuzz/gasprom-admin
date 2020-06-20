@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "name": "department"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "department_name": {
+      "type": "string"
+    },
+    "info": {
+      "type": "text"
+    },
+    "idea_cards": {
+      "collection": "idea-cards",
+      "via": "department"
+    }
+  }
+}

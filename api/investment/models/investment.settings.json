@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investments",
+  "info": {
+    "name": "investment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer",
+      "min": 1,
+      "unique": false
+    },
+    "user": {
+      "via": "investments",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "idea_card": {
+      "via": "investments",
+      "model": "idea-cards"
+    }
+  }
+}
